@@ -1,0 +1,117 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: large;
+  font-style: normal;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border-bottom: 0px solid rgb(0, 0, 0);
+  position: relative; /* For the red bar to be positioned correctly */
+}
+.contact-info {
+  background-color: rgb(88, 3, 3);
+  color: #ffffff;
+  padding: 6px;
+  position: fixed; /* Fixed to stay on the right side */
+  top: 0;
+  right: 0;
+  transform: translateX(-40%);
+  width: 270px; /* Fixed width */
+  border-radius: 0 0 10px 10px;
+  margin-left: 10px; /* Add a value and semi-colon here */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.contact-info span {
+  display: block; /* Ensure each span takes its own line */
+  font-size: 15px;
+  margin: 2px 0;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: 310px; /* Adjust to accommodate the width of the red section */
+}
+
+.navbar-left {
+  display: flex;
+  width: 180px;
+  flex-direction: column;
+}
+
+.navbar-left h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #000000;
+}
+
+.navbar-left p {
+  margin: 0;
+  font-size: 20px;
+  color: #b3b3b3;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  translate: -30px;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #490000;
+}
+
+.small-text {
+  position: absolute;
+  top: -20px; /* Adjust this value to position the text above the navbar links */
+  right: 0;
+  font-size: 10px;
+  color: #888888; /* Light gray for small text */
+  margin-right: 25px;
+}
+
+@media (max-width: 950px) {
+  .contact-info-button {
+    display: flex;
+  }
+
+  .contact-info {
+    height: 10%;
+    border-radius: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(97%);
+  }
+
+  .navbar {
+    margin-right: 0; /* Remove margin on small screens */
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "author": "John Doe",
+      "text": "This is a great post!",
+      "date": "2024-08-30T12:34:56Z",
+      "replyTo": null
+    },
+    {
+      "id": 2,
+      "postId": 1,
+      "author": "Jane Smith",
+      "text": "I agree with John. Thanks for sharing!",
+      "date": "2024-08-30T13:45:00Z",
+      "replyTo": 1
+    }
+  ]
+}

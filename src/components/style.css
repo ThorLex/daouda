@@ -1,0 +1,236 @@
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal overflow */
+body,
+html {
+  overflow-x: hidden;
+}
+
+.back {
+  background-image: url("");
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  background-position: center;
+}
+
+.familienrecht {
+  display: flex;
+  align-items: left;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.familienrecht img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.familienrecht-content h3 {
+  font-size: 42px;
+  margin: 0 0 10px 0;
+}
+
+.familienrecht-content p {
+  margin: 10px;
+  display: inline-table;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+@media (max-width: 1025px) {
+  .tabs {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+  }
+}
+
+.active {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  transform: translate(-0.5rem, 2.5rem);
+}
+
+.tabs div {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  transform: translate(-0.5rem, 1.5rem);
+  background-color: rgb(88, 3, 3);
+  color: white;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.main-title {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #b71c1c;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.continuation-section {
+  padding: 40px;
+  background-color: #f9f9f9; /* Light background color for the section */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #e4e4e4; /* Light border around the container */
+}
+
+.left-column {
+  width: 60%;
+  padding-right: 20px;
+}
+
+.left-column h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.left-column h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #b71c1c; /* Red color matching your design */
+}
+
+.left-column p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.right-column {
+  width: 35%;
+  padding-left: 20px;
+  border-left: 1px solid #e4e4e4; /* Vertical line separating columns */
+}
+
+.right-column h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #b71c1c; /* Red color matching your design */
+}
+
+.right-column ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.right-column li {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1025px) {
+  .tabs div.active {
+    background-color: #ff0800; /* Active tab color */
+    color: white;
+    transform: scale(1.1);
+  }
+}
+@media (min-width: 1025px) {
+  .tabs div.active {
+    background-color: #ff0800; /* Active tab color */
+    color: white;
+    transform: scale(1.1);
+    transform: translateX(-30px);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .tabs div {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+}
+/* Image Animation */
+.familienrecht img {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.familienrecht img.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Text Animation */
+.familienrecht-content h3,
+.familienrecht-content p {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.familienrecht-content.active h3,
+.familienrecht-content.active p {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 780px) {
+  .display-none {
+    display: none;
+  }
+  .left-column {
+    width: 100%;
+    padding-right: 20px;
+  }
+
+  .left-column h2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .left-column h3 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+.shape-image {
+  shape-outside: circle();
+  float: left;
+  margin: 0 20px 5px 0;
+}
