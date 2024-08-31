@@ -1,17 +1,15 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./components/Home.js";
-import Footer from "./layouts/Footer.js";
+
 import Contact from "./components/Contact.js";
 import NotFound from "./components/404.js";
 import AboutUs from "./components/AboutUs.js";
 import OurServices from "./components/Service.js";
-import Animation from "./components/Animation.js";
 import ServiceDetail from "./services/ServiceDetail.js";
 import { useState, useEffect } from "react";
 import Blog from "./components/blog.js";
-import AddArticleForm from "./components/addblog.js";
-
+//
 import Loading from "./components/Animation.js";
 import BlogDetail from "./components/BlogDetail.js";
 
@@ -44,7 +42,7 @@ function App(location) {
           <Route exact path="/services/:id" element={<ServiceDetail />} />
           <Route exact path="/blog" element={<Blog />} />
           <Route exact path="/blog/:id" element={<BlogDetail />} />
-          <Route exact path="/add" element={<AddArticleForm />} />
+          <Route exact path="/add" element={<p>En maintenace </p>} />
           <Route exact path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
