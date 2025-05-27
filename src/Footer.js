@@ -2,12 +2,20 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import DevelopedBy from "./DevelopedBy";
 
 export default function Footer() {
   const { t } = useTranslation();
 
   return (
     <div className="footer">
+      <hr>
+       <div className="text-center justify-center align-content-around">
+        made with <span className="text-red-500">❤️</span> by Galaxy dev team   
+       </div>
+      </hr>
+
+
       <footer className="w-full bg-gray-800 text-white p-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="footer-section flex flex-col justify-center md:justify-start items-center md:items-start">
@@ -59,6 +67,8 @@ export default function Footer() {
                 >
                   {t("contact_us")}
                 </Link>
+
+                
               </li>
             </ul>
           </div>
@@ -83,9 +93,11 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 text-center border-t border-gray-700 pt-4">
+       
           <p>&copy; 2024 Nom du Cabinet. All rights reserved.</p>
         </div>
       </footer>
+      
     </div>
   );
 }

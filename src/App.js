@@ -1,28 +1,27 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home.js";
-import Footer from "./layouts/Footer.js";
 import Contact from "./components/Contact.js";
 import NotFound from "./components/404.js";
 import AboutUs from "./components/AboutUs.js";
 import OurServices from "./components/Service.js";
-import Animation from "./components/Animation.js";
 import ServiceDetail from "./services/ServiceDetail.js";
 import { useState, useEffect } from "react";
 import Blog from "./components/blog.js";
 import AddArticleForm from "./components/addblog.js";
-
+import VerificationTool from "./components/bootverif.js";
 import Loading from "./components/Animation.js";
 import BlogDetail from "./components/BlogDetail.js";
 
+
 function App(location) {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 0);
 
     return () => {
       clearTimeout(timer);
@@ -45,6 +44,7 @@ function App(location) {
           <Route exact path="/blog" element={<Blog />} />
           <Route exact path="/blog/:id" element={<BlogDetail />} />
           <Route exact path="/add" element={<AddArticleForm />} />
+          <Route exact path="/bootverif" element={<VerificationTool />} />
           <Route exact path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
@@ -52,3 +52,5 @@ function App(location) {
   );
 }
 export default App;
+
+

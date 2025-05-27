@@ -1,7 +1,10 @@
 import React from "react";
 import Navbar from "../layouts/nav";
 import Footer from "../layouts/Footer";
-import blogImage from "./../images/pexels-matreding-4646777.jpg"; // Remplacez par une image de blog réelle
+import mediation from "./../images/mediation-en-ligne-avocat.jpg";
+import famille from "./../images/famille2.jpeg";
+import travailleur from "./../images/travailleur.jpg";
+import data from "../images/protectiondata.jpg";
 import { Link } from "react-router-dom";
 
 export default function Blog() {
@@ -12,7 +15,7 @@ export default function Blog() {
       excerpt:
         "Découvrez les bases du droit de la famille et comment il peut vous protéger et protéger vos proches...",
       date: "29 Août 2024",
-      image: blogImage,
+      image: famille,
     },
     {
       id: 2,
@@ -20,7 +23,7 @@ export default function Blog() {
       excerpt:
         "Le droit du travail peut être complexe. Voici un aperçu des lois les plus importantes à connaître...",
       date: "15 Août 2024",
-      image: blogImage,
+      image: travailleur,
     },
     {
       id: 3,
@@ -28,7 +31,7 @@ export default function Blog() {
       excerpt:
         "La médiation est une alternative efficace au litige. Découvrez comment elle peut résoudre vos conflits...",
       date: "1er Août 2024",
-      image: blogImage,
+      image: mediation,
     },
     {
       id: 4,
@@ -36,64 +39,7 @@ export default function Blog() {
       excerpt:
         "La protection des données est une partie essentielle du droit. Découvrez comment elle peut vous aider...",
       date: "1er Août 2024",
-      image: blogImage,
-    },
-    {
-      id: 5,
-      title: "Comprendre le Droit de la Famille",
-      excerpt:
-        "Découvrez les bases du droit de la famille et comment il peut vous protéger et protéger vos proches...",
-      date: "29 Août 2024",
-      image: blogImage,
-    },
-    {
-      id: 6,
-      title: "Les Lois sur l'Emploi : Ce que Vous Devez Savoir",
-      excerpt:
-        "Le droit du travail peut être complexe. Voici un aperçu des lois les plus importantes à connaître...",
-      date: "15 Août 2024",
-      image: blogImage,
-    },
-    {
-      id: 7,
-      title: "Guide sur la Médiation Juridique",
-      excerpt:
-        "La médiation est une alternative efficace au litige. Découvrez comment elle peut résoudre vos conflits...",
-      date: "1er Août 2024",
-      image: blogImage,
-    },
-    {
-      id: 8,
-      title: "Guide sur la Protection des Donneés",
-      excerpt:
-        "La protection des données est une partie essentielle du droit. Découvrez comment elle peut vous aider...",
-      date: "1er Août 2024",
-      image: blogImage,
-    },
-    {
-      id: 9,
-      title: "Comprendre le Droit de la Famille",
-
-      excerpt:
-        "Découvrez les bases du droit de la famille et comment il peut vous protéger et protéger vos proches...",
-      date: "29 Août 2024",
-      image: blogImage,
-    },
-    {
-      id: 10,
-      title: "Les Lois sur l'Emploi : Ce que Vous Devez Savoir",
-      excerpt:
-        "Le droit du travail peut être complexe. Voici un aperçu des lois les plus importantes à connaître...",
-      date: "15 Août 2024",
-      image: blogImage,
-    },
-    {
-      id: 11,
-      title: "Guide sur la Médiation Juridique",
-      excerpt:
-        "La médiation est une alternative efficace au litige. Découvrez comment elle peut résoudre vos conflits...",
-      date: "1er Août 2024",
-      image: blogImage,
+      image: data,
     },
   ];
 

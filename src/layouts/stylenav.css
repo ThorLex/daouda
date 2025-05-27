@@ -97,6 +97,18 @@ body {
   margin-right: 25px;
 }
 
+/* Language selector styles */
+.group:hover .group-hover\:visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.group .absolute {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
 @media (max-width: 950px) {
   .contact-info-button {
     display: flex;
@@ -113,5 +125,17 @@ body {
 
   .navbar {
     margin-right: 0; /* Remove margin on small screens */
+  }
+}
+
+@media (max-width: 1027px) {
+  .hiddennav {
+    display: none;
+  }
+}
+
+@media (min-width: 1027px) {
+  .hiddenate {
+    display: none;
   }
 }
