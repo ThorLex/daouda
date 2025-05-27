@@ -11,3 +11,14 @@
   background-color: #f5f5f5;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+/* Language selector styles */
+.group:hover .group-hover\:visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.group .absolute {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}

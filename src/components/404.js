@@ -1,27 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import notFoundImage from "../images/pexels-matreding-4646777.jpg"; // Add your illustration image here
+import { useTranslation } from "react-i18next";
+import Navbar from "../layouts/nav";
+import Footer from "../layouts/Footer";
 
 export default function NotFound() {
+  const { t } = useTranslation();
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
-      <div className="text-center">
-        <img
-          src={notFoundImage}
-          alt="404 Not Found"
-          className="w-full max-w-md mx-auto mb-8"
-        />
-        <h1 className="text-5xl font-bold text-gray-800 mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-8">
-          Oops! The page you are looking for does not exist.
-        </p>
-        <Link
-          to="/"
-          className="bg-red-950 text-white px-4 py-2 rounded hover:bg-red-800 transition"
-        >
-          Go Back Home
-        </Link>
+    <div className="all">
+      <Navbar />
+      <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center py-16">
+        <div className="text-center">
+          <h1 className="text-9xl font-bold text-red-900">404</h1>
+          <h2 className="text-4xl font-bold text-gray-800 mt-4">
+            {t("page_not_found")}
+          </h2>
+          <p className="text-gray-600 mt-4 text-lg">
+            {t("page_not_found_desc")}
+          </p>
+          <Link
+            to="/"
+            className="mt-8 inline-block bg-red-900 text-white px-6 py-3 rounded-lg hover:bg-red-800 transition-colors"
+          >
+            {t("back_to_home")}
+          </Link>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }
