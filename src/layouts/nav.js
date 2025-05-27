@@ -58,14 +58,18 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>: +237 677 516 461
         </span>
       </div>
-<<<<<<< HEAD
-      <div className="navbar-content  content-start ">
-        <div className="navbar-left justify-start  ">
+      <div className="navbar-content content-start">
+        <div className="navbar-left justify-start">
           <h1 className="text-sm text-center">
-            Cabinet D.Mbouobouo <br />
-            <small>Lord tchamba</small>
+            Cabinet d'Avocats D.Mbouobouo <br />
+            <small>{t("law_chambers")}</small>
           </h1>
-          <p className="text-center">Cabinet d'avocat</p>
+          <p className="text-center">{t("law_chambers")}</p>
+        </div>
+        <div className="burger-menu hiddenate">
+          <button onClick={toggleMenu} className="text-2xl">
+            <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
+          </button>
         </div>
 
         <div className="navbar-right hiddennav md:translate-x-[-300px] sm:translate-x-[0px] content-end">
