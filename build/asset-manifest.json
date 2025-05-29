@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.add8693a.css",
+    "main.js": "/static/js/main.dd964b84.js",
+    "static/js/914.4e6792a3.chunk.js": "/static/js/914.4e6792a3.chunk.js",
+    "static/js/453.d7ece59a.chunk.js": "/static/js/453.d7ece59a.chunk.js",
+    "static/media/image.jpg": "/static/media/image.edb7a92ef7cbe8aa09ab.jpg",
+    "static/media/marteau.jpg": "/static/media/marteau.31f2a45f0bdd9116d98b.jpg",
+    "static/media/pexels-pavel-danilyuk-8112193.jpg": "/static/media/pexels-pavel-danilyuk-8112193.054ea1d8397c185443c4.jpg",
+    "static/media/pexels-matreding-4646777.jpg": "/static/media/pexels-matreding-4646777.9227594404436a16fb30.jpg",
+    "static/media/maritime3.jpg": "/static/media/maritime3.6d1f017f7f3be87c3490.jpg",
+    "static/media/maritime1.jpg": "/static/media/maritime1.64ea45aa7e68df71384d.jpg",
+    "static/media/bootverif.PNG": "/static/media/bootverif.452ceaa1df8e8feed8c6.PNG",
+    "static/media/maritime2.jpg": "/static/media/maritime2.a49d38358c751c3b9504.jpg",
+    "static/media/bootverif.webp": "/static/media/bootverif.fb127a901cf3d5f9e717.webp",
+    "static/media/travailleur.jpg": "/static/media/travailleur.38d20ba0f02cfcdfc08d.jpg",
+    "static/media/téléchargement.png": "/static/media/téléchargement.ef7bec2825ec5f4dc6c8.png",
+    "static/media/work.png": "/static/media/work.363dbff40cf306c07e38.png",
+    "static/media/contract.png": "/static/media/contract.1e06e9bd0f1989717d42.png",
+    "static/media/family law.png": "/static/media/family law.8fd945b7830cedf98e85.png",
+    "static/media/mediation.png": "/static/media/mediation.a3d92bced41971727f7e.png",
+    "static/media/ohada.jpg": "/static/media/ohada.43a71940723f8dcd50c7.jpg",
+    "static/media/dmbou.jpeg": "/static/media/dmbou.a2f771e3006f2d73b1f0.jpeg",
+    "static/media/Best Civil Lawyers in Delhi Call-9870270979.png": "/static/media/Best Civil Lawyers in Delhi Call-9870270979.c3775753dc0f6d81c723.png",
+    "static/media/famille2.jpeg": "/static/media/famille2.135943cb8f59d40b3bc8.jpeg",
+    "static/media/mediation-en-ligne-avocat.jpg": "/static/media/mediation-en-ligne-avocat.48b5e11be9cce62c31df.jpg",
+    "static/media/protectiondata.jpg": "/static/media/protectiondata.fc42b34394aee3d23c74.jpg",
+    "index.html": "/index.html",
+    "main.add8693a.css.map": "/static/css/main.add8693a.css.map",
+    "main.dd964b84.js.map": "/static/js/main.dd964b84.js.map",
+    "914.4e6792a3.chunk.js.map": "/static/js/914.4e6792a3.chunk.js.map",
+    "453.d7ece59a.chunk.js.map": "/static/js/453.d7ece59a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.add8693a.css",
+    "static/js/main.dd964b84.js"
+  ]
+}
