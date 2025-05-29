@@ -4,6 +4,7 @@ import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import frTranslations from './locales/fr.json';
 import enTranslations from './locales/en.json';
+import zhTranslations from './locales/zh.json';
 
 
 i18n
@@ -12,7 +13,8 @@ i18n
   .init({
     resources: {
       en: enTranslations,
-      fr: frTranslations
+      fr: frTranslations,
+      zh: zhTranslations
     },
     fallbackLng: "fr",
     interpolation: {

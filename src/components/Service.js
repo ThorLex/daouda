@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../layouts/nav";
 import Footer from "../layouts/Footer";
 import { useTranslation } from "react-i18next";
@@ -92,9 +91,7 @@ export default function NosServices() {
             </div>
              
             ))}
-            <a className="text-red-500 hover:none transition duration-300">
-              Etc ...
-            </a>
+            <button className="text-red-500 hover:none transition duration-300 cursor-pointer bg-transparent border-none p-0 m-0">Etc ...</button>
           </div>
         </div>
 
@@ -120,7 +117,7 @@ export default function NosServices() {
                     to={`/services/${service.id}`}
                     className="text-red-500 hover:underline mt-4 inline-block"
                   >
-                      En savoir plus ...
+                    {t("learn_more")}
                   </Link>
                 </div>
               </div>

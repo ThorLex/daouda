@@ -8,7 +8,6 @@ export default function VerificationTool() {
   const { t } = useTranslation();
   const [inputValue, setInputValue] = useState("");
   const [verificationResult, setVerificationResult] = useState(null);
-  const [loading, setLoading] = useState(false);
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
@@ -16,7 +15,6 @@ export default function VerificationTool() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
 
     // Simulate verification process
     setTimeout(() => {
@@ -29,7 +27,6 @@ export default function VerificationTool() {
           "Erreur : La vérification a échoué. Veuillez réessayer."
         );
       }
-      setLoading(false);
     }, 1500);
   };
 

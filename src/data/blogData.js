@@ -22,6 +22,7 @@ export const blogData = [
     readTime: "18 min",
     category: "Droit Civil",
     tags: ["famille", "mariage", "divorce", "filiation", "coutume"],
+    importance:3,
     sections: [
       {
         id: 1,
@@ -177,6 +178,7 @@ export const blogData = [
     readTime: "20 min",
     category: "Droit Social",
     tags: ["travail", "contrat", "licenciement", "salaire", "OIT"],
+     importance:2,
     sections: [
       {
         id: 1,
@@ -346,6 +348,7 @@ export const blogData = [
     readTime: "15 min",
     category: "Modes Alternatifs",
     tags: ["médiation", "conflit", "arbitrage", "conciliation", "coutume"],
+    importance:2,
     sections: [
       {
         id: 1,
@@ -504,6 +507,7 @@ export const blogData = [
     readTime: "20 min",
     category: "Droit Numérique",
     tags: ["données personnelles", "RGPD", "ANPDC", "privacy"],
+    importance:2,
     sections: [
       {
         id: 1,
@@ -671,6 +675,7 @@ export const blogData = [
     readTime: "22 min",
     category: "Droit Spécialisé",
     tags: ["maritime", "navigation", "CEMAC", "UNCLOS", "commerce"],
+    importance:1,
     sections: [
       {
         id: 1,
@@ -849,6 +854,7 @@ export const blogData = [
     readTime: "25 min",
     category: "Droit des Affaires",
     tags: ["OHADA", "entreprise", "commerce", "insolvabilité", "arbitrage"],
+    importance:3,
     sections: [
       {
         id: 1,
@@ -982,6 +988,7 @@ export const blogData = [
     readTime: "22 min",
     category: "Droit Coutumier",
     tags: ["coutume", "famille", "foncier", "succession", "tradition"],
+    importance:4,
     sections: [
       {
         id: 1,
@@ -1100,6 +1107,7 @@ export const blogData = [
     readTime: "20 min",
     category: "Droit Environnemental",
     tags: ["environnement", "biodiversité", "climat", "pollution", "forêts"],
+    importance:2,
     sections: [
       {
         id: 1,

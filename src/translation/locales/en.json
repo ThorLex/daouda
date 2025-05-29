@@ -3,12 +3,13 @@
     "FR": "French (France)",
     "EN": "English (USA)",
 
-    "welcome": "Welcome to our website!",
+
+    "navhome": "Home",
+   "welcome": "Your legal advisor in Yaoundé!",
     "contact_us": "Contact Us",
     "services": "Our Services",
     "about_us": "About Us",
-    "home": "Home",
-    "learn_more": "Learn more",
+    "learn_more": "Learn more ...",
     "smallTextNavBar": "Contact us quickly for more informations",
     
     "home1": "Your legal advisor with years of experience specializing in family and labor law",
@@ -105,6 +106,65 @@
     
     "page_not_found": "Page Not Found",
     "page_not_found_desc": "Sorry, we couldn't find the page you're looking for.",
-    "back_to_home": "Back to Homepage"
+    "back_to_home": "Back to Homepage",
+    
+    "carousel": [
+      {
+        "title": "D. Mbouobouo Law Chambers",
+        "subtitle": "Legal Advice and Litigation",
+        "description": "Get tailored legal advice for your situation. Our experienced lawyers..."
+      },
+      {
+        "title": "D. Mbouobouo Law Chambers",
+        "subtitle": "Civil Litigation",
+        "description": "Our firm specializes in civil litigation, offering strong representation."
+      },
+      {
+        "title": "D. Mbouobouo Law Chambers",
+        "subtitle": "Intellectual Property",
+        "description": "Protect your creative works with our comprehensive intellectual property services. We handle trademark cases."
+      },
+      {
+        "title": "D. Mbouobouo Law Chambers",
+        "subtitle": "Labor Law",
+        "description": "Protect your rights at work with our labor law expertise. We offer legal advice."
+      }
+    ],
+    "home": {
+      "title": "D. Mbouobouo Law Chambers",
+      "intro1": "Daouda Mbouobouo, Esq. is your trusted legal partner, offering innovative and personalized solutions for your most complex legal needs. With recognized expertise in international law, civil law, dispute resolution, and more, Barrister Daouda Mbouobouo, admitted to the bars of Nigeria and Cameroon, puts his know-how and experience at your service to defend your interests with passion and rigor.",
+      "intro2": "Located in Yaoundé, D-Mbouobouo Law Chambers stands out for its unwavering commitment to providing high-quality legal advice and supporting clients at every stage of their legal journey, whether resolving disputes, protecting their rights, or guiding them through the intricacies of business law.",
+      "intro3": "Whether you are a business or an individual, Daouda Mbouobouo Law Chambers is dedicated to offering you exceptional legal representation, with a focus on listening, transparency, and efficiency. Choose legal excellence with our law firm.",
+      "specializations": "Specializations"
+    },
+    "email_queued": "You are offline. Your message will be sent when you are back online.",
+    "offline_warning": "You are currently offline. Email sending will be delayed.",
+    "back_online": "You are back online. Sending queued emails...",
+    "queued_message_sent": "Queued message sent successfully!",
+    "error_sending_queue": "Error sending message. It will be sent when you are back online.",
+    
+    "blog": "Blog",
+    "blog_intro": "Discover our latest articles, news, and legal insights. Subscribe to our newsletter to stay updated.",
+    "blog_seo_title": "Legal Blog | D-Mbouobouo Law Firm in Yaoundé",
+    "blog_seo_description": "Find all our articles, legal advice, and news written by D-Mbouobouo Law Firm in Yaoundé. Law, litigation, advice, OHADA, family, labor, Cameroon.",
+    "show_all_tags": "Show all tags",
+    "all": "All",
+    "filter_by_tag": "Filter by tag {{tag}}",
+    "search_article": "Search for an article...",
+    "search_by_title_or_content": "Search articles by title or content",
+    "sort_articles": "Sort articles",
+    "most_recent": "Most recent",
+    "oldest": "Oldest",
+    "reset_filters": "Reset filters",
+    "reset": "Reset",
+    "no_article_found": "No article found.",
+    "featured": "Featured",
+    "image_for": "Image for {{title}}",
+    "read_article": "Read article {{title}}",
+    "read_more": "Read more",
+    "made_with": "Made with",
+     "by_galaxy_dev": "by Galaxy Dev (BEKONO BEYAS Ambroise)",
+    "daouda_descr": "Barrister Daouda Mbouobouo is a renowned lawyer, recognized for his expertise in international law and civil litigation. He has extensive experience in peaceful dispute resolution, will drafting, and intellectual property law. As a member of the Cameroon and Nigeria Bar Associations, Barrister Mbouobouo has built an exemplary career, defending his clients' interests with rigor and professionalism. His skills also extend to land and labor disputes, where he excels in providing strategic legal advice. Thanks to his dedication and deep legal knowledge, Barrister Mbouobouo is a key ally for those seeking effective defense and tailored legal solutions.",
+    "article_in": "Article in"
   }
 }

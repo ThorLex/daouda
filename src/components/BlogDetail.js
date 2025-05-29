@@ -1,4 +1,3 @@
-
 import React, { useEffect, useReducer, useCallback, lazy, Suspense, useState, useMemo } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import Navbar from "../layouts/nav";
@@ -8,6 +7,10 @@ import { format, parse } from "date-fns";
 import { fr } from "date-fns/locale"; // Import French locale
 import bootverif from "./../images/bootverif.webp";
 import { blogData, recentBlogs, relatedBlogs, initialComments } from "../data/blogData";
+import { useTranslation } from "react-i18next";
+
+
+// gerer le fait que les blog soit traduit ou non
 
 // Lazy load images
 const LazyImage = lazy(() => import("./LazyImage"));
@@ -53,95 +56,6 @@ const BlogCard = React.memo(({ blog }) => (
       {blog.title}
     </Link>
   </li>
-));
-
-const Comment = React.memo(({ comment }) => {
-  let formattedDate = comment.date;
-  try {
-    const parsedDate = parse(comment.date, "dd MMMM yyyy", new Date(), { locale: fr });
-    if (!isNaN(parsedDate.getTime())) {
-      formattedDate = format(parsedDate, "yyyy-MM-dd", { locale: fr });
-    } else {
-      formattedDate = "Date invalide";
-    }
-  } catch (error) {
-    console.error("Error parsing comment date:", error);
-    formattedDate = "Date invalide";
-  }
-
-  return (
-    <li className="mb-6 border-b pb-4">
-      <p className="text-gray-600">{comment.content}</p>
-      <div className="text-sm text-gray-500 mt-2">
-        <span className="font-medium">{comment.author}</span>
-        <span className="mx-2">•</span>
-        <time dateTime={formattedDate === "Date invalide" ? undefined : formattedDate}>
-          {comment.date}
-        </time>
-      </div>
-    </li>
-  );
-});
-
-// Extracted Comment Form component for better organization
-const CommentForm = React.memo(({ state, dispatch, handleSubmit }) => (
-  <div className="mb-6">
-    <div className="flex gap-2 mb-4" role="toolbar" aria-label="Formatting options">
-      <button
-        type="button"
-        onClick={() => dispatch({ type: "TOGGLE_BOLD" })}
-        className={`px-3 py-1 rounded ${state.isBold ? "bg-gray-300" : "bg-gray-200"}`}
-        aria-label="Mettre en gras"
-        aria-pressed={state.isBold}
-      >
-        <strong>B</strong>
-      </button>
-      <button
-        type="button"
-        onClick={() => dispatch({ type: "TOGGLE_ITALIC" })}
-        className={`px-3 py-1 rounded ${state.isItalic ? "bg-gray-300" : "bg-gray-200"}`}
-        aria-label="Mettre en italique"
-        aria-pressed={state.isItalic}
-      >
-        <em>I</em>
-      </button>
-      <button
-        type="button"
-        onClick={() => dispatch({ type: "SET_COMMENT", payload: state.comment + " [lien](url) " })}
-        className="px-3 py-1 rounded bg-gray-200"
-        aria-label="Insérer un lien"
-      >
-        🔗
-      </button>
-    </div>
-
-    <textarea
-      value={state.comment}
-      onChange={(e) => dispatch({ type: "SET_COMMENT", payload: e.target.value })}
-      className="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500"
-      rows={4}
-      placeholder="Votre commentaire..."
-      style={{
-        fontWeight: state.isBold ? "bold" : "normal",
-        fontStyle: state.isItalic ? "italic" : "normal",
-      }}
-      aria-label="Champ de commentaire"
-    />
-
-    {state.error && (
-      <p className="text-red-500 mt-2" role="alert">{state.error}</p>
-    )}
-
-    <button
-      type="button"
-      onClick={handleSubmit}
-      disabled={state.isSubmitting || !state.comment.trim()}
-      className="mt-4 bg-red-950 text-white px-6 py-2 rounded-lg hover:bg-red-800 disabled:opacity-50 transition-colors"
-      aria-label="Envoyer le commentaire"
-    >
-      {state.isSubmitting ? "Envoi..." : "Envoyer"}
-    </button>
-  </div>
 ));
 
 // Nouvelle composante pour le rendu des références
@@ -708,6 +622,7 @@ const ContentSection = React.memo(({ section, index }) => {
 const BlogDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+   const {t}= useTranslation()
   const [state, dispatch] = useReducer(commentReducer, {
     comment: "",
     isBold: false,
@@ -829,33 +744,6 @@ const BlogDetail = () => {
     fetchBlogPost();
   }, [id, defaultPost]);
 
-  const handleSubmit = useCallback(async () => {
-    if (!state.comment.trim()) return;
-    
-    dispatch({ type: "SET_SUBMITTING", payload: true });
-    
-    try {
-      // Simulate API call for submitting comments
-      const newComment = {
-        id: comments.length + 1,
-        author: "Vous",
-        date: format(new Date(), "dd MMMM yyyy", { locale: fr }),
-        content: state.comment,
-      };
-      
-      // Wait for "API" response
-      await new Promise(resolve => setTimeout(resolve, 500));
-      
-      setComments(prevComments => [newComment, ...prevComments]);
-      dispatch({ type: "RESET" });
-    } catch (error) {
-      console.error("Error submitting comment:", error);
-      dispatch({ type: "SET_ERROR", payload: "Erreur lors de l'envoi du commentaire" });
-    } finally {
-      dispatch({ type: "SET_SUBMITTING", payload: false });
-    }
-  }, [state.comment, comments.length]);
-
   // Créer une table des matières à partir des sections
   const tableOfContents = useMemo(() => {
     if (!blogPost || !blogPost.sections) return [];
@@ -868,6 +756,7 @@ const BlogDetail = () => {
       })) : [],
     }));
   }, [blogPost]);
+ 
 
   // Use a loading skeleton to improve user experience
   if (isLoading) {
@@ -917,9 +806,17 @@ const BlogDetail = () => {
       <Navbar />
       <main className=" mx-auto px-4 py-16">
         <div className="container flex flex-col lg:flex-row gap-8">
+        
           {/* Main Content */}
           <article className="lg:w-3/4 bg-white rounded-lg shadow-lg p-8">
+              <button
+                      onClick={() => navigate(-1)}
+                      className="relative m-4 bg-red-950 text-white px-4 py-2 rounded hover:bg-red-800 transition-colors"
+                    >
+                      {t('back')}
+            </button>
             <div className="relative w-full h-64 mb-6">
+               
               <Suspense fallback={<div className="w-full h-64 bg-gray-200 animate-pulse rounded-lg" />}>
                 <LazyImage
                   src={blogPost.image}
@@ -998,7 +895,7 @@ const BlogDetail = () => {
         {/* Comments Section */}
        
        <div className=" container pt-3 ">
-       <section className="bg-white rounded-lg shadow-lg p-6 mt-8">
+       {/* <section className="bg-white rounded-lg shadow-lg p-6 mt-8">
           <h2 className="text-2xl font-semibold mb-4">Commentaires</h2>
           <CommentForm state={state} dispatch={dispatch} handleSubmit={handleSubmit} />
           <ul className="space-y-4">
@@ -1010,7 +907,7 @@ const BlogDetail = () => {
               <p className="text-gray-500">Aucun commentaire pour le moment.</p>
             )}
           </ul>
-        </section>
+        </section> */}
        </div>
       </main>
     

@@ -2,7 +2,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { FaTwitter, FaGithub, FaGlobe, FaLinkedin } from "react-icons/fa";
+import { FaTwitter, FaGlobe, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -12,10 +12,8 @@ export default function Footer() {
       <footer className="w-full bg-gray-800 text-white p-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="footer-section flex flex-col justify-center md:justify-start items-center md:items-start">
-            <h2 className="text-2xl font-bold">
-              Cabinet d'Avocats-D.Mbouobouo
-            </h2>
-            <p className="text-2xl font-bold"> {t('law_chambers')} </p>
+            <h2 className="text-2xl font-bold">{t('law_chambers')}</h2>
+            <p className="text-2xl font-bold">{t('law_firm')}</p>
           </div>
 
           <div className="footer-section">
@@ -23,36 +21,34 @@ export default function Footer() {
             <p>Email: daoudambouobouo@gmail.com</p>
             <span>Tel: +237 677 516 461</span> <br />
             <span> +39 348 178 7560 </span>
-            <p>
-              Address: SCDP NSAM Yaoundé face ECHE garage 1<sup>er</sup> etage
-            </p>
+            <p>{t('address')}: SCDP NSAM Yaoundé face ECHE garage 1<sup>er</sup> etage</p>
           </div>
 
           <div className="footer-section">
             <h3 className="text-xl font-semibold mb-4">{t('services')}</h3>
             <ul>
               <li>
-                <Link to="/" className="hover:text-red-500 transition-colors duration-300">
-                  {t('home')}
+                <Link to="/" className="hover:text-red-950 transition-colors duration-300">
+                  {t('navhome')}
                 </Link>
               </li>
               <li>
-                <Link to="/our-services" className="hover:text-red-500 transition-colors duration-300">
+                <Link to="/our-services" className="hover:text-red-950 transition-colors duration-300">
                   {t('services')}
                 </Link>
               </li>
               <li>
-                <Link to="/about-us" className="hover:text-red-500 transition-colors duration-300">
+                <Link to="/about-us" className="hover:text-red-950 transition-colors duration-300">
                   {t('about_us')}
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-red-500 transition-colors duration-300">
+                <Link to="/contact" className="hover:text-red-950 transition-colors duration-300">
                   {t('contact_us')}
                 </Link>
               </li>
               <li>
-                <Link to="/bootverif" className="hover:text-red-500 transition-colors duration-300">
+                <Link to="/bootverif" className="hover:text-red-950 transition-colors duration-300">
                   BootVerif
                 </Link>
               </li>
@@ -79,13 +75,15 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 text-center border-t border-gray-700 pt-4">
-          <p className="mb-4">{t('developed_by')}</p>
+<div className="text-center justify-center align-content-around">
+        {t('made_with')} <span className="text-red-950">❤️</span> {t('by_galaxy_dev')}
+       </div>
           <div className="flex justify-center space-x-6">
             <a
               href="https://twitter.com/dev__Galaxy"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-red-500 transition-colors duration-300"
+              className="hover:text-red-950 transition-colors duration-300"
             >
               <FaTwitter className="text-2xl" />
             </a>
@@ -93,7 +91,7 @@ export default function Footer() {
               href="https://galaxydev.portfolio.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-red-500 transition-colors duration-300"
+              className="hover:text-red-950 transition-colors duration-300"
             >
               <FaGlobe className="text-2xl" />
             </a>
@@ -101,13 +99,13 @@ export default function Footer() {
               href="https://www.linkedin.com/in/ambroise-beyas-bekono-2a0079368/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-red-500 transition-colors duration-300"
+              className="hover:text-red-950 transition-colors duration-300"
             >
               <FaLinkedin className="text-2xl" />
             </a>
           </div>
           <p className="mt-4 text-sm text-gray-400">
-            © {new Date().getFullYear()} Cabinet d'Avocats-D.Mbouobouo. {t('all_rights_reserved')}
+            © {new Date().getFullYear()} Galaxy dev. {t('all_rights_reserved')}
           </p>
         </div>
       </footer>

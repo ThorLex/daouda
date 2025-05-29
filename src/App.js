@@ -34,8 +34,8 @@ function App(location) {
 
   return (
     <>
-      <BrowserRouter>
-        <Routes>
+      <BrowserRouter> 
+        <Routes children = "me">
           <Route exact path="/" element={<Home />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/about-us" element={<AboutUs />} />

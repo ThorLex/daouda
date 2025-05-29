@@ -1,0 +1,12 @@
+.my-masonry-grid {
+  display: flex;
+  margin-left: -16px; /* Gutter size */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 16px; /* Gutter size */
+  background-clip: padding-box;
+}
+.my-masonry-grid_column > div {
+  margin-bottom: 16px; /* Space between items */
+}

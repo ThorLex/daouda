@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Navbar from "../layouts/nav";
 import Footer from "../layouts/Footer";
+import notFoundImage from "../images/pexels-matreding-4646777.jpg"; 
 
 export default function NotFound() {
   const { t } = useTranslation();
@@ -12,6 +13,11 @@ export default function NotFound() {
       <Navbar />
       <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center py-16">
         <div className="text-center">
+           <img
+          src={notFoundImage}
+          alt="404 Not Found"
+          className="w-full max-w-md mx-auto mb-8"
+        />
           <h1 className="text-9xl font-bold text-red-900">404</h1>
           <h2 className="text-4xl font-bold text-gray-800 mt-4">
             {t("page_not_found")}

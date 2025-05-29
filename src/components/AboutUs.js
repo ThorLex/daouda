@@ -1,108 +1,81 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 import Navbar from "../layouts/nav";
 import Footer from "../layouts/Footer";
-import "./style.css";
-import pic1 from "./../images/pexels-matreding-4646777.jpg";
-import pic2 from "./../images/pexels-pavel-danilyuk-8112195.jpg";
+import aboutImage from "../images/marteau.jpg"; // Exemple d'image, remplacez par une image réelle
+import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-export default function AboutUs() {
-  const { t } = useTranslation();
-
+export default function APropos() {
+  const navigate = useNavigate();
+   const {t}= useTranslation()
   return (
     <div className="all">
       <Navbar />
-      <div className="bg-gray-100 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
-              {t("about_title")}
-            </h1>
-            <p className="mt-4 text-xl text-gray-600">
-              {t("about_subtitle")}
-            </p>
-          </div>
-
-          <div className="mt-16">
-            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-              <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+      <div className="bg-gray-100 py-16 min-h-screen">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="flex-1 p-8 bg-white rounded-xl shadow-2xl mb-8 md:mb-0 flex flex-col items-center">
+              <div className="mb-8 flex flex-col items-center w-full">
+                <div className="rounded-full border-8 border-red-100 shadow-lg p-2 bg-white flex items-center justify-center mb-6" style={{width:'200px',height:'200px'}}>
+                  <img
+                    src={aboutImage}
+                    alt="À Propos de Nous"
+                    className="object-cover w-full h-full rounded-full"
+                    style={{maxWidth:'180px',maxHeight:'180px'}}
+                  />
+                </div>
+                <h2 className="text-4xl font-bold mb-4 text-red-950 text-center"> {t("about_us")} </h2>
+                <p className="text-lg text-gray-700 mb-4 italic text-center">
+                  {t("discover_more")}
+                </p>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-red-950 pb-2 text-center">
                   {t("firm_overview")}
                 </h2>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-700 mb-4 text-center">
                   {t("about_intro")}
                 </p>
-                <p className="text-gray-600">
+                <p className="text-gray-600 mb-8 text-center">
                   {t("about_description")}
                 </p>
               </div>
-              <div className="lg:pl-8">
-                <img
-                  src={pic1}
-                  alt="Law Office"
-                  className="rounded-lg shadow-lg w-full h-auto"
-                />
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 mb-8 w-full">
+                <div className="bg-white p-6 rounded-lg shadow-md border border-red-100">
+                  <h3 className="text-xl font-bold text-red-950 mb-2">
+                    {t("expertise")}
+                  </h3>
+                  <p className="text-gray-700 text-sm">{t("expertise_desc")}</p>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-md border border-red-100">
+                  <h3 className="text-xl font-bold text-red-950 mb-2">
+                    {t("dedication")}
+                  </h3>
+                  <p className="text-gray-700 text-sm">{t("dedication_desc")}</p>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-md border border-red-100">
+                  <h3 className="text-xl font-bold text-red-950 mb-2">
+                    {t("innovation")}
+                  </h3>
+                  <p className="text-gray-700 text-sm">{t("innovation_desc")}</p>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-md border border-red-100">
+                  <h3 className="text-xl font-bold text-red-950 mb-2">
+                    {t("integrity")}
+                  </h3>
+                  <p className="text-gray-700 text-sm">{t("integrity_desc")}</p>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div className="mt-16">
-            <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-              {t("why_choose_us")}
-            </h2>
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-              <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  {t("expertise")}
-                </h3>
-                <p className="text-gray-600">
-                  {t("expertise_desc")}
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  {t("dedication")}
-                </h3>
-                <p className="text-gray-600">
-                  {t("dedication_desc")}
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  {t("innovation")}
-                </h3>
-                <p className="text-gray-600">
-                  {t("innovation_desc")}
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  {t("integrity")}
-                </h3>
-                <p className="text-gray-600">
-                  {t("integrity_desc")}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-16">
-            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-              <div className="lg:pr-8">
-                <img
-                  src={pic2}
-                  alt="Law Practice"
-                  className="rounded-lg shadow-lg w-full h-auto"
-                />
-              </div>
-              <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                  {t("our_mission")}
-                </h2>
-                <p className="text-gray-600">
-                  {t("mission_statement")}
-                </p>
-              </div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-red-950 pb-2 text-center">
+                {t("our_mission")}
+              </h2>
+              <p className="text-gray-700 mb-8 text-center">
+                {t("mission_statement")}
+              </p>
+              <button
+                onClick={() => navigate("/contact")}
+                className="bg-red-950 text-white px-8 py-3 rounded-lg shadow hover:bg-red-800 transition-colors text-lg font-semibold mx-auto block"
+              >
+                {t('get_in_touch')}
+              </button>
             </div>
           </div>
         </div>

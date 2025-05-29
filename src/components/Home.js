@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../layouts/nav";
 import Footer from "../layouts/Footer";
-import circle from "./../images/image.jpg";
 import down from "../images/image.jpg";
 import "./style.css";
 import { Link } from "react-router-dom";
@@ -10,7 +9,6 @@ import proprieté from "./../images/téléchargement.png";
 import civil from "./../images/Best Civil Lawyers in Delhi Call-9870270979.png";
 import backgroundImage from "../images/pexels-pavel-danilyuk-8112193.jpg";
 import contrat from "../images/work.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import contactImage from "../images/image.jpg";
 import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
@@ -33,7 +31,7 @@ export default function Home() {
           to_name: " cabinet d'Avocats-D.Mbouobouo",
           message:
             message +
-            "            " +
+            "   " +
             Address +
             "       " +
             phone +
@@ -45,56 +43,49 @@ export default function Home() {
       );
 
       if (sending.status === 200) {
-        alert("Message envoyé");
+        alert(t('message_sent'));
         setAddress("");
         setPhone("");
         setName("");
         setMessage("");
         setEmail("");
       } else {
-        alert("Message non envoyé");
+        alert(t('message_not_sent'));
       }
     } catch (error) {
-      alert("Erreur lors de l'envoi du message");
+      alert(t('error_sending'));
     }
   };
 
   const size = 35;
   const carouselItems = [
     {
-      image: down, // Remplacez par la référence de l'image réelle
-      title: "Cabinet d'Avocats-D Mbouobouo Law chambers",
+      image: down,
+      title: t('carousel.0.title'),
       href: "/services/conseil-juridique",
-      subtitle: "Conseil Juridique et Contentieux",
-      description:
-        "Obtenez des conseils juridiques sur mesure adaptés à votre situation. Nos Avocats expérimentés....",
+      subtitle: t('carousel.0.subtitle'),
+      description: t('carousel.0.description'),
     },
-
     {
-      image: civil, // Remplacez par la référence de l'image réelle
-      title: "Cabinet d'Avocats-D Mbouobouo Law chambers",
+      image: civil,
+      title: t('carousel.1.title'),
       href: "/services/litiges-civils",
-      subtitle: "Litiges Civils",
-      description:
-        "Notre cabinet est spécialisé en litiges civils, offrant une représentation solide ",
+      subtitle: t('carousel.1.subtitle'),
+      description: t('carousel.1.description'),
     },
-
     {
-      image: proprieté, // Remplacez par la référence de l'image réelle
-      title: "Cabinet d'Avocats-D Mbouobouo Law chambers",
+      image: proprieté,
+      title: t('carousel.2.title'),
       href: "/services/propriete-intellectuelle",
-      subtitle: "Propriété Intellectuelle",
-      description:
-        "Protégez vos œuvres créatives avec nos services complets en propriété intellectuelle. Nous traitons les dossiers de marques",
+      subtitle: t('carousel.2.subtitle'),
+      description: t('carousel.2.description'),
     },
-
     {
-      image: contrat, // Remplacez par la référence de l'image réelle
-      title: "Cabinet d'Avocats-D Mbouobouo Law chambers",
+      image: contrat,
+      title: t('carousel.3.title'),
       href: "/services/droit-du-travail",
-      subtitle: "Droit du Travail",
-      description:
-        "Protégez vos droits au travail grâce à notre expertise en droit du travail. Nous offrons des conseils .",
+      subtitle: t('carousel.3.subtitle'),
+      description: t('carousel.3.description'),
     },
   ];
 
@@ -108,7 +99,7 @@ export default function Home() {
           <h2 className="text-4xl font-semibold text-gray-800">
             {t('welcome')}
           </h2>
-          <h3 className="text-xl text-gray-600 mt-4"></h3>
+          {/* <h3 className="text-xl text-gray-600 mt-4"> hello hi how are you </h3> */}
           <Link to="about-us">
             <button
               type="button"
@@ -155,7 +146,7 @@ export default function Home() {
               <div
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`  ${currentIndex == index ? "active" : " dot"}`}
+                className={`  ${currentIndex === index ? "active" : " dot"}`}
               >
                 0{index + 1}
               </div>
@@ -248,39 +239,22 @@ export default function Home() {
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="left-column space-y-4 sm:space-y-6 lg:order-2 md:left-column">
             <h2 className="text-2xl  text-center justfy-center sm:text-3xl font-semibold text-gray-800">
-              Cabinet d'Avocats-D.Mbouobouo Law Chambers
+              {t('home.title')}
             </h2>
-
             <p className=" text-justify text-sm sm:text-base text-gray-600 mt-4 leading-relaxed">
-              Cabinet Daouda Mbouobouo, Esq. est votre partenaire juridique de
-              confiance, offrant des solutions innovantes et personnalisées pour
-              répondre à vos besoins juridiques les plus complexes. Avec une
-              expertise reconnue en droit international, droit civil, résolution
-              de litiges, et bien plus encore, Maître Daouda Mbouobouo, Avocat
-              admis aux barreaux du Nigeria et du Cameroun, met son savoir-faire
-              et son expérience à votre service pour défendre vos intérêts avec
-              passion et rigueur.
+              {t('home.intro1')}
             </p>
             <p className=" text-justify text-sm sm:text-base text-gray-600 mt-2 leading-relaxed">
-              Situé à Yaoundé, le cabinet d'Avocats D-Mbouobouo Law chambers se
-              distingue par son engagement indéfectible à fournir des conseils
-              juridiques de haute qualité et à accompagner ses clients à chaque
-              étape de leurs démarches, qu'il s'agisse de résoudre des
-              différends, de protéger leurs droits, ou de les guider dans les
-              méandres du droit des affaires.
+              {t('home.intro2')}
             </p>
             <p className=" text-justify text-sm sm:text-base text-gray-600 mt-2 leading-relaxed">
-              Que vous soyez une entreprise ou un particulier, le cabinet Daouda
-              Mbouobouo est dédié à vous offrir une représentation juridique
-              exceptionnelle, avec une approche axée sur l'écoute, la
-              transparence et l'efficacité. Faites le choix de l'excellence
-              juridique avec le cabinet d'Avocats.
+              {t('home.intro3')}
             </p>
           </div>
 
           <div className=" display-none right-column lg:order-1">
             <h3 className="text-2xl font-semibold text-gray-800">
-              Spécialisations
+              {t('home.specializations')}
             </h3>
             <ul className="  list-disc list-inside mt-4 space-y-2 text-gray-600">
               <li>{t('labor_law')}</li>
@@ -288,7 +262,7 @@ export default function Home() {
               <li>{t('criminal_law')}</li>
               <li>{t('civil_law')}</li>
               <li>{t('commercial_law')}</li>
-              <li>{t('corporate_law')}</li>
+              <li>{t('corporate_law')}</li> 
               <li>{t('maritime_law')}</li>
               <li>{t('intellectual_property_law')}</li>
               <li>{t('data_protection_law')}</li>
@@ -317,21 +291,7 @@ export default function Home() {
                   Maître Daouda Mbouobouo{" "}
                 </h2>
                 <p className="leading-6  text-justify first-letter:mt-10 first-letter:font-semibold first-letter:text-3xl">
-                  Maître Daouda Mbouobouo est un Avocat renommé, reconnu pour
-                  son expertise en droit international et en contentieux civil.
-                  Son parcours impressionnant est marqué par une solide
-                  expérience dans le mode de règlement pacifique des conflits,
-                  la rédaction de testaments, et le droit de la propriété
-                  intellectuelle. En tant qu’Avocat admis aux Barreaux du
-                  Cameroun et du Nigéria, Maître Mbouobouo a su bâtir une
-                  carrière exemplaire, en défendant les intérêts de ses clients
-                  avec rigueur et professionnalisme. Ses compétences s’étendent
-                  également aux litiges fonciers, aux litiges en matière de
-                  droit du travail, où il excelle dans l’apport de conseils
-                  juridiques stratégiques. Grâce à son dévouement et à sa
-                  connaissance approfondie du droit, Maître Mbouobouo s’est
-                  imposé comme un allié incontournable pour ceux qui recherchent
-                  une défense efficace et des solutions juridiques sur mesure.
+                {t('daouda_descr')}
                 </p>
               </article>
             </div>
@@ -341,7 +301,7 @@ export default function Home() {
 
       {/* cta Section */}
       <section
-        className="relative bg-cover bg-center h-64 flex items-center justify-center text-center"
+        className="relative bg-cover bg-center h-86 flex items-center justify-center text-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <div className="absolute inset-0 bg-black opacity-25"></div>

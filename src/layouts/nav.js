@@ -72,10 +72,10 @@ const Navbar = () => {
           </button>
         </div>
 
-        <div className="navbar-right hiddennav md:translate-x-[-300px] sm:translate-x-[0px] content-end">
+        <div className="navbar-right hiddennav md:translate-x-[-280px] sm:translate-x-[0px] content-end">
           <ul className="nav-links">
             <li>
-              <Link to="/">   {t("home")}</Link>
+              <Link to="/">   {t("navhome")}</Link>
               <div className="small-text mx-2">
                {t("smallTextNavBar")}
               </div>
@@ -93,12 +93,11 @@ const Navbar = () => {
               <Link to="/blog">{t("blog")}</Link>
             </li>
           </ul>
-          {/* Language selector for desktop - only visible on md and larger screens */}
-          <div className="hidden md:block">
-            <LanguageSelector />
-          </div>
+          
         </div>
+         
       </div>
+           
 
       {/* Modal Dropdown Menu for Small Screens */}
       {menuOpen && (
@@ -147,6 +146,10 @@ const Navbar = () => {
           </div>
         </div>
       )}
+        
+<div className="flex justify-left"  >
+          <LanguageSelector />
+        </div>   
     </nav>
   );
 };

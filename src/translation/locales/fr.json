@@ -3,13 +3,13 @@
   
     "FR": "Français (France)",
     "EN": "Anglais (USA)",
-
+    "navhome": "Accueil",
     "welcome": " Votre conseiller juridique à Yaoundé!",
     "contact_us": "Contactez-nous",
     "services": "Nos services",
     "about_us": "À propos de nous",
     "home": "Accueil",
-    "learn_more": "En savoir plus",
+    "learn_more": "En savoir plus ...",
     "smallTextNavBar": "Contactez-nous rapidement pour plus d'informations",
     
     "home1": "Votre conseiller juridique De longues années d'expérience en tant qu'avocat spécialisé en droit de la famille et du travail",
@@ -23,21 +23,18 @@
     "mediation": "Règlement Pacifique des Conflits",
     "maritime_law": "Droit Maritime",
     "corporate_law": "Droit des sociétés",
-    "commercial_law": "Droit commercial",
-    
-    "family_law_desc": "Notre équipe fournit des conseils et une représentation juridique experte dans tous les domaines du droit de la famille, y compris le divorce, la garde des enfants, et plus encore.",
-    "labor_law_desc": "Nous assistons nos clients dans divers problèmes de droit du travail, y compris le licenciement abusif, la discrimination, et le harcèlement.",
-    "criminal_law_desc": "Nos avocats spécialisés en défense pénale ont une vaste expérience dans la défense des clients contre une large gamme d'accusations criminelles.",
-    "mediation_desc": "Nous offrons des services de médiation pour aider les clients à résoudre les litiges en dehors des tribunaux, ce qui permet de gagner du temps et de réduire les coûts.",
-    
+    "commercial_law": "Droit commercial",  
+    "family_law_desc":"Notre équipe offre un soutien juridique complet et personnalisé dans tous les aspects du droit de la famille, comprenant des conseils avisés et une représentation efficace. Nous comprenons que les affaires familiales peuvent être parmi les plus sensibles et émotionnellement complexes. C'est pourquoi nous nous engageons à traiter chaque dossier avec la plus grande attention et empathie. En matière de divorce, nous assistons nos clients tout au long du processus, en veillant à protéger leurs droits et à atteindre un règlement équitable, que ce soit à travers une négociation amiable ou, si nécessaire, par des procédures judiciaires. Lorsque des questions de garde d'enfants sont en jeu, notre priorité est toujours de servir au mieux les intérêts des enfants. Outre le divorce et la garde des enfants, nous traitons également d'autres domaines essentiels du droit de la famille, tels que les adoptions, la pension alimentaire, la protection contre la violence domestique, et les accords prénuptiaux et postnuptiaux. Chaque situation familiale est unique, et nous nous efforçons de fournir des conseils adaptés et de défendre vigoureusement les intérêts de nos clients.",
+    "labor_law_desc": "Nous assistons nos clients dans divers problèmes de droit du travail, y compris le licenciement abusif, la discrimination, et le harcèlement. Nous offrons une assistance juridique complète à nos clients confrontés à des défis en matière de droit du travail. Notre expertise couvre une large gamme de situations, allant des licenciements abusifs, où nous nous battons pour garantir que les droits de nos clients soient respectés, aux cas de discrimination sur le lieu de travail, où nous œuvrons pour que chaque individu bénéficie d'un traitement équitable, indépendamment de sa race, de son sexe, de son âge ou de toute autre caractéristique protégée. Nous intervenons également dans les affaires de harcèlement, en veillant à ce que les victimes obtiennent la justice qu'elles méritent et que les environnements de travail deviennent plus sûrs et respectueux. Grâce à notre compréhension approfondie des lois du travail et à notre approche centrée sur les besoins du client, nous nous assurons que chaque cas est traité avec le plus grand sérieux, offrant des solutions juridiques adaptées et efficaces pour protéger les intérêts de nos clients.",
+    "criminal_law_desc":"Nos avocats spécialisés en défense pénale ont une vaste expérience dans la défense des clients contre une large gamme d'accusations criminelles. Nous comprenons que faire face à des accusations pénales peut être une période extrêmement stressante, c'est pourquoi nous nous engageons à fournir un soutien juridique solide et fiable à chaque étape du processus. Que vous soyez confronté à des accusations de vol, de fraude, de violence, ou à d'autres infractions graves, notre équipe est là pour protéger vos droits et vous offrir la meilleure défense possible. Nous analysons chaque détail de votre affaire avec précision, en développant des stratégies de défense personnalisées pour obtenir les meilleurs résultats. En plus de la défense en salle d'audience, nous offrons des consultations préventives et des conseils juridiques pour aider à éviter les pièges juridiques et à gérer les risques potentiels. Notre priorité est de garantir que nos clients soient bien informés et préparés à chaque étape, tout en leur offrant une représentation rigoureuse et déterminée.",
+    "mediation_desc": "Nous assistons nos clients dans divers problèmes de droit du travail, y compris le licenciement abusif, la discrimination, et le harcèlement. Nous offrons une assistance juridique complète à nos clients confrontés à des défis en matière de droit du travail. Notre expertise couvre une large gamme de situations, allant des licenciements abusifs, où nous nous battons pour garantir que les droits de nos clients soient respectés, aux cas de discrimination sur le lieu de travail, où nous œuvrons pour que chaque individu bénéficie d'un traitement équitable, indépendamment de sa race, de son sexe, de son âge ou de toute autre caractéristique protégée. Nous intervenons également dans les affaires de harcèlement, en veillant à ce que les victimes obtiennent la justice qu'elles méritent et que les environnements de travail deviennent plus sûrs et respectueux. Grâce à notre compréhension approfondie des lois du travail et à notre approche centrée sur les besoins du client, nous nous assurons que chaque cas est traité avec le plus grand sérieux, offrant des solutions juridiques adaptées et efficaces pour protéger les intérêts de nos clients.",
     "civil_law": "Droit Civil",
     "intellectual_property_law": "Droit de la Propriété Intellectuelle",
     "data_protection_law": "Droit de la Protection des Données",
     "contract_law": "Droit des Contrats",
     "peaceful_settlement_of_disputes": "Règlement Pacifique des Différends",
-    
-    "specialization": "Spécialisations",
-    "law_quote": "La justice est la vérité en action",
+ "daouda_descr":"Maître Daouda Mbouobouo est un avocat reconnu pour son expertise en droit international et en contentieux civil. Il possède une vaste expérience en règlement pacifique des conflits, rédaction de testaments et droit de la propriété intellectuelle. Membre des barreaux du Cameroun et du Nigéria, il a bâti une carrière exemplaire en défendant les intérêts de ses clients avec rigueur et professionnalisme. Ses compétences couvrent également les litiges fonciers et du travail, où il excelle dans le conseil stratégique. Grâce à son dévouement et à sa connaissance approfondie du droit, il est un allié incontournable pour ceux qui recherchent une défense efficace et des solutions juridiques sur mesure.",
+    "specialization": "Spécialisations",    "law_quote": "La justice est la vérité en action",
     "contact_us_for_more_advice": "Contactez-nous pour plus de conseils juridiques",
     "fill_out_form_to_contact_us": "Remplissez le formulaire ci-dessous pour nous contacter",
     "your_name": "Votre Nom",
@@ -53,7 +50,7 @@
     "find_on_maps": "Retrouvez nous sur Google Maps en cliquant ici",
     "all_rights_reserved": "Tous droits réservés",
     "developed_by": "Développé par Galaxy Dev",
-    
+    "discover_more" : " Découvrez-en plus sur notre cabinet, nos valeurs et notre mission.",
     "bootverif_title": "BootVerif",
     "security_priority": "Votre sécurité est notre priorité. Utilisez cet outil pour vérifier que vos informations sont sécurisées.",
     "enter_info": "Entrez votre information",
@@ -106,6 +103,64 @@
     
     "page_not_found": "Page Non Trouvée",
     "page_not_found_desc": "Désolé, nous n'avons pas pu trouver la page que vous recherchez.",
-    "back_to_home": "Retour à l'Accueil"
+    "back_to_home": "Retour à l'Accueil",
+    
+    "carousel": [
+      {
+        "title": "Cabinet d'Avocats-D Mbouobouo Law chambers",
+        "subtitle": "Conseil Juridique et Contentieux",
+        "description": "Obtenez des conseils juridiques sur mesure adaptés à votre situation. Nos Avocats expérimentés...."
+      },
+      {
+        "title": "Cabinet d'Avocats-D Mbouobouo Law chambers",
+        "subtitle": "Litiges Civils",
+        "description": "Notre cabinet est spécialisé en litiges civils, offrant une représentation solide "
+      },
+      {
+        "title": "Cabinet d'Avocats-D Mbouobouo Law chambers",
+        "subtitle": "Propriété Intellectuelle",
+        "description": "Protégez vos œuvres créatives avec nos services complets en propriété intellectuelle. Nous traitons les dossiers de marques"
+      },
+      {
+        "title": "Cabinet d'Avocats-D Mbouobouo Law chambers",
+        "subtitle": "Droit du Travail",
+        "description": "Protégez vos droits au travail grâce à notre expertise en droit du travail. Nous offrons des conseils ."
+      }
+    ],
+    "home": {
+      "title": "Cabinet d'Avocats-D.Mbouobouo Law Chambers",
+      "intro1": "Cabinet Daouda Mbouobouo, Esq. est votre partenaire juridique de confiance, offrant des solutions innovantes et personnalisées pour répondre à vos besoins juridiques les plus complexes. Avec une expertise reconnue en droit international, droit civil, résolution de litiges, et bien plus encore, Maître Daouda Mbouobouo, Avocat admis aux barreaux du Nigeria et du Cameroun, met son savoir-faire et son expérience à votre service pour défendre vos intérêts avec passion et rigueur.",
+      "intro2": "Situé à Yaoundé, le cabinet d'Avocats D-Mbouobouo Law chambers se distingue par son engagement indéfectible à fournir des conseils juridiques de haute qualité et à accompagner ses clients à chaque étape de leurs démarches, qu'il s'agisse de résoudre des différends, de protéger leurs droits, ou de les guider dans les méandres du droit des affaires.",
+      "intro3": "Que vous soyez une entreprise ou un particulier, le cabinet Daouda Mbouobouo est dédié à vous offrir une représentation juridique exceptionnelle, avec une approche axée sur l'écoute, la transparence et l'efficacité. Faites le choix de l'excellence juridique avec le cabinet d'Avocats.",
+      "specializations": "Spécialisations"
+    },
+    "email_queued": "Vous êtes hors ligne. Votre message sera envoyé dès que vous serez reconnecté.",
+    "offline_warning": "Vous êtes actuellement hors ligne. L'envoi des emails sera différé.",
+    "back_online": "Connexion rétablie. Envoi des messages en attente...",
+    "queued_message_sent": "Message en attente envoyé avec succès !",
+    "error_sending_queue": "Erreur lors de l'envoi. Le message sera envoyé dès que possible.",
+    
+    "blog": "Blog",
+    "blog_intro": "Découvrez nos derniers articles, actualités et connaissances juridiques. Abonnez-vous à notre newsletter pour rester informé.",
+    "blog_seo_title": "Blog juridique | Cabinet d'Avocat D-Mbouobouo à Yaoundé",
+    "blog_seo_description": "Retrouvez tous nos articles, conseils et actualités juridiques rédigés par le Cabinet d'Avocat D-Mbouobouo à Yaoundé. Droit, litiges, conseils, OHADA, famille, travail, Cameroun.",
+    "show_all_tags": "Afficher tous les tags",
+    "all": "Tous",
+    "filter_by_tag": "Filtrer par tag {{tag}}",
+    "search_article": "Rechercher un article...",
+    "search_by_title_or_content": "Rechercher des articles par titre ou contenu",
+    "sort_articles": "Trier les articles",
+    "most_recent": "Plus récents",
+    "oldest": "Plus anciens",
+    "reset_filters": "Réinitialiser les filtres",
+    "reset": "Réinitialiser",
+    "no_article_found": "Aucun article trouvé.",
+    "featured": "à la une",
+    "image_for": "Image pour {{title}}",
+    "read_article": "Lire l'article {{title}}",
+    "read_more": "Lire plus",
+    "made_with": "Fait avec",
+    "by_galaxy_dev": "by Galaxy Dev (BEKONO BEYAS Ambroise)",
+    "article_in": "Article en"
   }
 }
