@@ -278,28 +278,24 @@ export default function Home() {
         <div className="container mx-auto py-12 px-6 lg:px-8">
           <div className="relative">
             {/* Image section */}
-
-            {/* Text sections */}
             <div className="relative mt-8">
-              <article className=" rounded-lg ">
+              <article className="rounded-lg">
                 <img
                   src={dm}
                   alt="cat"
-                  className="w-48 h-48 object-cover rounded-full float-left mr-5 mb-2 shape-image"
+                  className="w-48 h-48 object-cover rounded-full float-none md:float-left lg:float-left md:mr-5 lg:mr-5 mb-2"
                 />
-                <h2 className="mb-5 text-center text-2xl font-semibold sm:text-2xl text-red-950 mt-2">
+                <h2 className="mb-5 sm:hidden text-center text-2xl font-semibold sm:text-2xl text-red-950 mt-2">
                   Maître Daouda Mbouobouo{" "}
                 </h2>
-                <p className="leading-6  text-justify first-letter:mt-10 first-letter:font-semibold first-letter:text-3xl">
-                {t('daouda_descr')}
+                <p className="leading-6 text-justify first-letter:mt-10 first-letter:font-semibold first-letter:text-3xl">
+                  {t('daouda_descr')}
                 </p>
               </article>
             </div>
           </div>
         </div>
       </div>
-
-      {/* cta Section */}
       <section
         className="relative bg-cover bg-center h-86 flex items-center justify-center text-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}

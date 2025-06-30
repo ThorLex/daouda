@@ -115,7 +115,7 @@ const Navbar = () => {
             <ul className="nav-links flex flex-col space-y-4 mt-8">
               <li>
                 <Link to="/" onClick={toggleMenu}>
-                {t("home")}
+                {t("navhome")}
                 </Link>
               </li>
               <li>
