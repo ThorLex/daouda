@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.add8693a.css",
-    "main.js": "/static/js/main.dd964b84.js",
+    "main.css": "/static/css/main.195ae60a.css",
+    "main.js": "/static/js/main.aa39c3f6.js",
     "static/js/914.4e6792a3.chunk.js": "/static/js/914.4e6792a3.chunk.js",
     "static/js/453.d7ece59a.chunk.js": "/static/js/453.d7ece59a.chunk.js",
     "static/media/image.jpg": "/static/media/image.edb7a92ef7cbe8aa09ab.jpg",
@@ -26,13 +26,13 @@
     "static/media/mediation-en-ligne-avocat.jpg": "/static/media/mediation-en-ligne-avocat.48b5e11be9cce62c31df.jpg",
     "static/media/protectiondata.jpg": "/static/media/protectiondata.fc42b34394aee3d23c74.jpg",
     "index.html": "/index.html",
-    "main.add8693a.css.map": "/static/css/main.add8693a.css.map",
-    "main.dd964b84.js.map": "/static/js/main.dd964b84.js.map",
+    "main.195ae60a.css.map": "/static/css/main.195ae60a.css.map",
+    "main.aa39c3f6.js.map": "/static/js/main.aa39c3f6.js.map",
     "914.4e6792a3.chunk.js.map": "/static/js/914.4e6792a3.chunk.js.map",
     "453.d7ece59a.chunk.js.map": "/static/js/453.d7ece59a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.add8693a.css",
-    "static/js/main.dd964b84.js"
+    "static/css/main.195ae60a.css",
+    "static/js/main.aa39c3f6.js"
   ]
 }
